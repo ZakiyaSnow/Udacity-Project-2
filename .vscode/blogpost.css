@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgrey;
+    font-family: 'Poppins';
+}
+
+.header{
+    background-image: url(clark-van-der-beken-Tk0B3Dfkf_4-unsplash.jpg);
+    font-size: 20px;
+    width:100%;
+    height:85px;
+    border-radius: 5px;
+}
+.links{
+    display: flex;
+    flex: 1;
+    list-style: none;
+    float: right;
+    margin:10px;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color:black;
+    padding-right: 10px;
+}
+a:hover{
+    color:mediumvioletred;
+}
+.container{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 95% 5%;
+    grid-template-areas:
+    "sidebar main"
+    "footer footer" ;
+    border: 2px solid black;
+}
+#main{
+    grid-area:main;
+    background-image: url(weddingphoto.jpg);
+    background-image: cover;
+}
+.img{
+    width:100%;
+    background-image: cover;
+}
+.info{
+    margin-top: 25%;
+    letter-spacing: 2px;
+}
+
+#sidebar{
+    grid-area:sidebar;
+}    
+#footer{
+    grid-area:footer;
+    
+}
+.box{
+    display:flex;
+    border:2px solid blue;
+}
+.overlay{
+    position: absolute;
+    background: rgba(0, 0,0, 0.5);
+    color: #f1f1f1;
+    width:50%;
+    height:92%;
+    transition: .5 ease;
+    opacity:0 ;
+    color:white;
+    font-weight: 500;
+    font-size:20px;
+    padding:10px;
+    text-align: center;
+}
+#main:hover .overlay{
+    opacity:1;
+}
+.socialtags{
+    padding-left: 5px;
+    margin-top: 5px;
+}    
+.copyright{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    float:right;
+    margin-left:1020px;
+    padding-top: 5px;   
+}
+.click{
+    margin-top:25px;
+    font-weight: 600;
+    width:100px;
+    height:auto;
+    background-color: mediumvioletred;
+    letter-spacing: 2px;
+    
+}
+
+
+

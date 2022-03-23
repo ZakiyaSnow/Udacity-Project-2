@@ -1,0 +1,161 @@
+@import url(blog.css);
+@import url(navigation\ bar.css);
+@import url(socialtags.css);
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* add background color with some padding */
+body{ 
+    background-color: lightgrey;
+    padding:20px;
+    font-family: 'Roboto' 'sans-serif';
+ 
+}
+
+h1{
+    color:teal;
+    font-style:italic;   
+}
+
+
+.grid{
+    display:grid;
+    width:100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "sd sd sd sd"
+    "mn mn mn mn"
+    "ip ip ip ip"
+    "fm fm fm fm"
+    "ft ft ft ft";
+    
+}
+#hd{
+    grid-area:hd;
+    
+}
+#sd{
+    grid-area:sd;
+    
+}
+#mn{
+    grid-area:mn;
+    
+}
+#ip{
+    grid-area:ip;
+    
+}
+#fm{
+    grid-area:fm;
+
+}
+#ft{
+    grid-area:ft;
+}
+.header{
+    width:100%;
+    background-image: url(assets/greenplant.jpg);   
+    height:35%;
+    
+}
+.header h2{
+    color:teal;
+    font-size: 5vw;
+    font-style: oblique;
+}
+/* Two unequal left columns next to each other */
+.leftcolumn{
+    float:left;
+    width:75%;
+}
+.rightcolumn{
+    float:left;
+    width:25%;
+
+}
+h3,h4{
+    color:black;
+    text-align:center;
+    font-size:1.5em;
+    padding:5px;
+    letter-spacing: 1px;
+}
+.text{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.img{
+    background-color:rgb(48, 43, 43);
+    width:100%;
+    padding:10px;
+}
+
+.card{
+    margin-top: 25px;
+    padding:5px;
+    background-color: whitesmoke;
+}
+.button{
+    background-color: teal;
+    color:whitesmoke;
+    text-decoration: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+    font-weight: 500;  
+    margin-left: 5px;
+}
+.button:hover{
+    background-color: whitesmoke;
+    color: teal;
+}
+.nestedGrid{
+    display:grid;
+    width:100%;
+    
+}
+
+/* /*When the screen is less than 800px make two columns stack on top of each other */
+@media screen and (max-width:800px){
+    .leftcolumn, .rightcolumn{
+        width:100%;
+        padding:0;
+    }
+}
+
+/*When the screen is more than 800px */
+@media screen and (min-device-width:801px) and (max-device-width:1100px){
+    body{
+        background-color: teal;
+        
+    }
+    .text{
+        font-size: 1.5em;
+    }
+
+}
+
+/* When the screen is more than 1101px */
+@media screen and (min-device-width:1101px){
+    body{
+        background-color:aquamarine;
+    }
+   .text{
+       font-size:25px;
+   }
+   .card{
+    height:100%;
+    }
+    
+}

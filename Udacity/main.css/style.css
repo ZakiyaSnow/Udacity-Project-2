@@ -62,7 +62,7 @@ h1{
 }
 .header{
     width:100%;
-    background-image: url(assets/greenplant.jpg);   
+    background-image: url(/Udacity/assets/greenplant.jpg);   
     height:35%;
     
 }

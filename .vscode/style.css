@@ -1,8 +1,6 @@
-@import url(blog.css);
-@import url(navigation\ bar.css);
-@import url(socialtags.css);
-
-
+@import url(main.css/navigation\ bar.css);
+@import url(main.css/blog.css);
+@import url(main.css/socialtags.css);
 
 *{
     margin:0;
